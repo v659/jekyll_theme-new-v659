@@ -4,5 +4,5 @@ Title: Home
 
 # my-theme
 
-# This is a jekyll theme for users
+*my theme* is a jekyll theme for average humans
 
