@@ -1,4 +1,7 @@
 ---
+Title: Home
 ---
 
-# tonic-starter
+# my-theme
+
+# This is a jekyll theme
