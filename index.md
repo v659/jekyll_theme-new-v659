@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-
+<div style="margin-left: 2rem;">
 # 🌟 Welcome to My Jekyll Theme
 
 This page demonstrates styled components using SCSS, including a floating circular navbar, highlight boxes, underlines, and input fields.
@@ -43,4 +43,6 @@ This is a small, pill-shaped navbar that can be placed anywhere:
 <div class="card">
   <p>Enter your name below:</p>
   <input type="text" class="typing-box" placeholder="Your name..." />
+</div>
+
 </div>
