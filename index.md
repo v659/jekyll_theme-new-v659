@@ -4,6 +4,7 @@ title: Home
 ---
 
 <div style="margin-left: 2rem;">
+
 # 🌟 Welcome to My Jekyll Theme
 
 This page demonstrates styled components using SCSS, including a floating circular navbar, highlight boxes, underlines, and input fields.
@@ -11,8 +12,6 @@ This page demonstrates styled components using SCSS, including a floating circul
 ---
 
 ## 🔘 Floating Circular Navbar
-
-This is a small, pill-shaped navbar that can be placed anywhere:
 
 <div class="floating-navbar">
   <a href="/">Home</a>
