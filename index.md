@@ -3,17 +3,25 @@ layout: default
 title: Home
 ---
 
+
+<nav class="navbar">
+  <div class="nav-logo">MyTheme</div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</nav>
+
 <div class="container">
   <h1>Welcome to My Jekyll Theme</h1>
 
   <div class="card">
-    <p>This is a card with styled buttons:</p>
-    <button class="btn-primary">Primary Action</button>
-    <button class="btn-secondary">Secondary Action</button>
+    <p>The navigation bar above is styled with SCSS and includes hover underline effects.</p>
   </div>
 
   <div class="highlight-box">
-     This is a highlighted message box, useful for notes or alerts.
+    ✨ This is a highlighted message box, useful for notes or alerts.
   </div>
 
   <p class="underline-primary">This text has a primary-colored underline.</p>
