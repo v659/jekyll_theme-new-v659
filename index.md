@@ -43,3 +43,5 @@ This page demonstrates styled components using SCSS, including a floating circul
   <p>Enter your name below:</p>
   <input type="text" class="typing-box" placeholder="Your name..." />
 </div>
+
+# This is a custom heading colour
