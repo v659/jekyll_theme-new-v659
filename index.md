@@ -1,5 +1,5 @@
 ---
-Title: Home
+title: Home
 layout: default
 ---
 
