@@ -1,7 +1,55 @@
+// assets/css/main.scss
+
+// Variables
+$primary-color: #007acc;
+$secondary-color: #ff9800;
+$font-stack: 'Segoe UI', sans-serif;
+$padding: 1rem;
+
+// Mixins
+@mixin button-style($bg) {
+  background-color: $bg;
+  color: white;
+  padding: $padding;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+// Base
 body {
-  background-color: #1725eb;
-  font-family: sans-serif;
+  font-family: $font-stack;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+// Layout
+.container {
+  max-width: 960px;
   margin: auto;
-  max-width: 70ch;
-  color: #be8514;
+  padding: $padding;
+}
+
+// Components
+.btn-primary {
+  @include button-style($primary-color);
+}
+
+.btn-secondary {
+  @include button-style($secondary-color);
+}
+
+.card {
+  background: white;
+  padding: $padding;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
