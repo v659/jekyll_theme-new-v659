@@ -5,7 +5,7 @@ title: Home
 
 
 
-# Welcome to My Jekyll Theme
+# Welcome to Neon-X
 
 This page demonstrates styled components using SCSS, including a floating circular navbar, highlight boxes, underlines, and input fields.
 
