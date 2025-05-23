@@ -45,3 +45,10 @@ This page demonstrates styled components using SCSS, including a floating circul
 </div>
 
 # This is a custom heading colour
+
+<div class="card">
+  <h2>Styled Buttons</h2>
+  <button class="btn-primary">Primary Action</button>
+  <button class="btn-secondary">Secondary Action</button>
+</div>
+
