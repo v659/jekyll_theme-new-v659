@@ -16,10 +16,15 @@ $padding: 1rem;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 
   &:hover {
     background-color: darken($bg, 10%);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 }
 
@@ -61,6 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.2);
+  }
 }
 
 // Highlight Box
@@ -103,30 +114,4 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 0.5rem;
   background: #e2a10c;
-}
-
-// Floating Navbar
-.floating-navbar {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.75rem 1rem;
-  border-radius: 3rem;
-  width: fit-content;
-  margin: 1rem auto;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-}
-
-.floating-navbar a {
-  text-decoration: none;
-  color: #ffeeba;
-  font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  transition: color 0.2s;
-}
-
-.floating-navbar a:hover {
-  color: $primary-color;
 }
