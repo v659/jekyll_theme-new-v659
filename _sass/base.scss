@@ -12,8 +12,6 @@ $padding: 1rem;
 // Neon Text Mixin
 @mixin neon-text($color) {
   color: $color;
-  text-shadow:
-    0 0 4px lighten($color, 50%);
 }
 
 // Base
