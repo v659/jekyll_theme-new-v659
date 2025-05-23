@@ -13,8 +13,7 @@ $padding: 1rem;
 @mixin neon-text($color) {
   color: $color;
   text-shadow:
-    0 0 2px $color,
-    0 0 4px lighten($color, 10%);
+    0 0 4px lighten($color, 50%);
 }
 
 // Base
