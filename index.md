@@ -5,13 +5,13 @@ title: Home
 
 
 
-# 🌟 Welcome to My Jekyll Theme
+# Welcome to My Jekyll Theme
 
 This page demonstrates styled components using SCSS, including a floating circular navbar, highlight boxes, underlines, and input fields.
 
 ---
 
-## 🔘 Floating Circular Navbar
+## Floating Circular Navbar
 
 <div class="floating-navbar">
   <a href="/">Home</a>
@@ -22,22 +22,22 @@ This page demonstrates styled components using SCSS, including a floating circul
 
 ---
 
-## ✨ Highlight Box
+## Highlight Box
 
 <div class="highlight-box">
-  ✅ This is a styled highlight box, useful for messages, alerts, or special notes.
+   This is a styled highlight box, useful for messages, alerts, or special notes.
 </div>
 
 ---
 
-## 🔠 Underlined Text
+## Underlined Text
 
 <p class="underline-primary">This is an example of primary-colored underlined text.</p>
 <p class="underline-secondary">This is an example of secondary-colored underlined text.</p>
 
 ---
 
-## ⌨️ Typing Input
+##  Typing Input
 
 <div class="card">
   <p>Enter your name below:</p>
