@@ -30,9 +30,18 @@ body {
   margin-top: 50px;
   @include neon-text($primary-color);
 }
-
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #0ff, -2px -2px #f0f; }
+  50% { text-shadow: -2px 2px #f0f, 2px -2px #0ff; }
+  100% { text-shadow: 2px 2px #0ff, -2px -2px #f0f; }
+}
+h1, h2 {
+  animation: glitch 1s infinite alternate;
+  font-family: $font-title;
+  @include neon-text($primary-color);
+}
 // Headings
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-family: $font-title;
   @include neon-text($primary-color);
 }
