@@ -1,4 +1,10 @@
-<footer>
-  <link rel="stylesheet" href="{{ '/assets/my-theme.css' | relative_url }}">
-  <p>Made by Arjun Chandra Agarwal!!</p>
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/contact">Contact</a>
+    </p>
+  </div>
 </footer>
