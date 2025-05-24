@@ -35,7 +35,11 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 <p class="underline-secondary">This is an example of secondary-colored underlined text.</p>
 
 ---
+## Highlighting text
 
+<mark>This is highlighted text</mark>
+
+---
 ##  Typing Input
 
 <div class="card">
@@ -50,8 +54,4 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   <button class="btn-primary">Primary Action</button>
   <button class="btn-secondary">Secondary Action</button>
 </div>
-
-## Highlighting text
-
-<mark>This is highlighted text</mark>
 
