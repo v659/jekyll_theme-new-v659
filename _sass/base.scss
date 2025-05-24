@@ -32,7 +32,7 @@ body {
 }
 @keyframes glitch {
   0% { text-shadow: 2px 2px #0ff, -2px -2px #ffb700; }
-  50% { text-shadow: -2px 2px #f0f, 2px -2px #0ff; }
+  50% { text-shadow: -2px 2px #ffb700, 2px -2px #0ff; }
   100% { text-shadow: 2px 2px #0ff, -2px -2px #ffb700; }
 }
 h1, h2 {
