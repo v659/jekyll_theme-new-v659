@@ -29,7 +29,7 @@ body {
   margin-left: 50px;
   margin-top: 50px;
   @include neon-text($primary-color);
-}
+} 
 @keyframes glitch {
   0% { text-shadow: 2px 2px #0ff, -2px -2px #ffb700; }
   50% { text-shadow: -2px 2px #ffb700, 2px -2px #0ff; }
