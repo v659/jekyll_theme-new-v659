@@ -1,12 +1,18 @@
 // assets/css/base.scss
 
 // Import Neon-like Font
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+// assets/css/base.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); // For titles
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap'); // For body
+
 
 // Variables
 $primary-color: #00ffff; // Cyan neon
 $secondary-color: #ffb700; // Magenta neon
-$font-stack: 'Orbitron', sans-serif;
+$font-title: 'Orbitron', sans-serif;
+$font-body: 'Source Code Pro', monospace;
+
 $padding: 1rem;
 
 // Neon Text Mixin
@@ -16,7 +22,7 @@ $padding: 1rem;
 
 // Base
 body {
-  font-family: $font-stack;
+  font-family: $font-body;
   background: #0a0a0a;
   margin: 0;
   padding: 0;
@@ -27,6 +33,7 @@ body {
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
   @include neon-text($primary-color);
 }
 
@@ -108,7 +115,7 @@ p, li, label, input, button, span, div {
 // Typing Box
 .typing-box {
   padding: $padding;
-  font-family: $font-stack;
+  font-family: $font-body;
   font-size: 1rem;
   width: 100%;
   max-width: 400px;
