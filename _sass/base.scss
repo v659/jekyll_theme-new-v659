@@ -52,7 +52,7 @@ p, li, label, input, button, span, div {
 // Buttons
 @mixin button-style($bg) {
   background-color: $bg;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: $padding;
   border: none;
   border-radius: 0.5rem;
