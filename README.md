@@ -1,6 +1,6 @@
 # Neon-X
 
-A Jekyll theme using 2 neon text colours(blue and pink), and can be usable by anyone!!
+Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 **Use**
 
