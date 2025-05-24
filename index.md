@@ -7,7 +7,7 @@ title: Home
 
 # Welcome to Neon-X
 
-This page demonstrates styled components using SCSS, including a floating circular navbar, highlight boxes, underlines, and input fields.
+Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 ---
 
