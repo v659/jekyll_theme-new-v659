@@ -14,7 +14,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 ## Floating Circular Navbar
 
 <div class="floating-navbar">
-  <a href="/">Home</a>
+  <a href="https://v659.github.io/jekyll_theme-new-v659/">Home</a>
   <a href="https://github.com/v659/jekyll_theme-new-v659">Git</a>
   <a href="https://tonic.hackclub.com/">#tonic</a>
 </div>
