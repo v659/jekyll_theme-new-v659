@@ -51,3 +51,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   <button class="btn-secondary">Secondary Action</button>
 </div>
 
+## Highlighting text
+
+<mark>This is highlighted text</mark>
+

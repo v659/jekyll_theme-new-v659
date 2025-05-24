@@ -36,7 +36,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
   @include neon-text($primary-color);
 }
-
+// Highlight
+mark{
+  background-color: #ffb700;
+  color:#000;
+  font-weight: 5px;
+}
 // Paragraphs, Lists, etc.
 p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
