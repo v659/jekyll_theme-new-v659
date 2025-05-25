@@ -122,3 +122,25 @@ p, li, label, input, button, span, div {
   margin-top: 0.5rem;
   color: $primary-color;
 }
+
+// Code Box Styling
+.code-box {
+  background: #111;
+  border: 2px solid $primary-color;
+  padding: 1rem;
+  font-family: 'Source Code Pro', monospace;
+  color: $primary-color;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  box-shadow:
+    0 0 5px $primary-color,
+    0 0 10px $primary-color,
+    inset 0 0 10px $primary-color;
+
+  code {
+    font-family: 'Source Code Pro', monospace;
+    color: inherit;
+    background: transparent;
+  }
+}
