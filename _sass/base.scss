@@ -219,6 +219,18 @@ pre.language-python {
   white-space: pre-wrap;
 }
 
-.highlighted-keyword { color: #ffb700; }  // Yellow for keywords
-.highlighted-string { color: #00ffff; }   // Cyan for strings
+.highlighted-keyword {
+  color: #ffb700;
+  font-weight: bold;
+}
+
+.highlighted-string {
+  color: #00ffff;
+}
+
+.highlighted-comment {
+  color: #777;
+  font-style: italic;
+}
+
 
