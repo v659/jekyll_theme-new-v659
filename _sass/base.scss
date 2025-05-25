@@ -148,14 +148,22 @@ p, li, label, input, button, span, div {
   background: transparent;
   color: transparent;
   caret-color: $primary-color;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
   border: none;
-  padding: $padding;
+  padding: $padding; // must match #highlighted-code exactly
+  margin: 0;
+
   z-index: 2;
   overflow: hidden;
+
+  // Prevent mobile browsers from zooming or shifting the box
+  -webkit-appearance: none;
 }
+
 
 // Highlight layer (styled code view)
 #highlighted-code {
