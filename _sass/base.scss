@@ -144,3 +144,12 @@ p, li, label, input, button, span, div {
     background: transparent;
   }
 }
+
+.highlight {
+  @extend .code-box;
+}
+
+.highlight code {
+  font-family: 'Source Code Pro', monospace;
+  color: $primary-color;
+}

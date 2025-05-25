@@ -1,5 +1,9 @@
 title: my-theme
 description: "A usable jekyll theme"
 encoding: utf-8
-
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
