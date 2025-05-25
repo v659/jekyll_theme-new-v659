@@ -125,6 +125,47 @@ p, li, label, input, button, span, div {
 
 // Code Box Styling
 .code-box {
+  background: #0d0d0d;
+  border: 2px solid $primary-color;
+  padding: 1rem;
+  font-family: 'Source Code Pro', monospace;
+  color: $primary-color;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  line-height: 1.6;
+
+  box-shadow:
+    0 0 6px $primary-color,
+    0 0 12px $primary-color,
+    inset 0 0 8px $primary-color;
+
+  code {
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+  }
+}
+
+// Apply the same styling to Rouge-highlighted code blocks
+.highlight {
+  @extend .code-box;
+}
+
+// Optional: Better syntax coloring for readability
+.highlight .k  { color: #ff00ff; }  // keyword
+.highlight .nf { color: #00ffcc; }  // function name
+.highlight .nb { color: #ffb700; }  // built-in name
+.highlight .s  { color: #ff73fa; }  // string
+.highlight .c  { color: #777777; }  // comment
+.highlight .p  { color: $primary-color; } // punctuation
+
+.highlight code {
+  font-family: 'Source Code Pro', monospace;
+  color: inherit;
+}
+
+.editable-code {
   background: #111;
   border: 2px solid $primary-color;
   padding: 1rem;
@@ -133,27 +174,12 @@ p, li, label, input, button, span, div {
   border-radius: 0.5rem;
   overflow-x: auto;
   margin: 1rem 0;
+  white-space: pre;
   box-shadow:
     0 0 5px $primary-color,
     0 0 10px $primary-color,
     inset 0 0 10px $primary-color;
-
-  code {
-    font-family: 'Source Code Pro', monospace;
-    color: inherit;
-    background: transparent;
-  }
-}
-
-.highlight {
-  @extend .code-box;
-}
-
-.highlight .k { color: #ffb700; } // keywords
-.highlight .s { color: #00ffff; } // strings
-.highlight .c { color: #777; }    // comments
-
-.highlight code {
-  font-family: 'Source Code Pro', monospace;
-  color: $primary-color;
+  outline: none;
+  min-height: 100px;
+  caret-color: $secondary-color;
 }
