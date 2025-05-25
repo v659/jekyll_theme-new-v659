@@ -70,60 +70,14 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 ---
 
-## Try Typing Python Below
-
-<div class="code-editor-container">
-  <textarea id="code-input" spellcheck="false" placeholder="Type Python code here...">def greet():
-    print("Hello from a neon-themed Jekyll site!")</textarea>
-  <pre id="highlighted-code" aria-hidden="true"></pre>
+## Python
+<div class="language-python highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight"><code><span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s">"Hello from a neon-themed Jekyll site!"</span><span class="p">)</span>
+</code></pre>
+  </div>
 </div>
-
-<script>
-  const textarea = document.getElementById("code-input");
-  const highlighted = document.getElementById("highlighted-code");
-
-  function escapeHtml(text) {
-    return text
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;");
-  }
-
-  function highlightCode(code) {
-    const escaped = escapeHtml(code);
-
-    // Highlight strings first (to avoid matching keywords inside strings)
-    let highlightedCode = escaped.replace(
-      /(".*?"|'.*?')/g,
-      '<span class="highlighted-string">$1</span>'
-    );
-
-    // Highlight keywords
-    highlightedCode = highlightedCode.replace(
-      /\b(def|print|return|if|else|elif|for|while|in|import|from|as|with|class|try|except|finally|raise|pass|continue|break|and|or|not|is|None|True|False)\b/g,
-      '<span class="highlighted-keyword">$1</span>'
-    );
-
-    // Highlight comments
-    highlightedCode = highlightedCode.replace(
-      /(#.*?$)/gm,
-      '<span class="highlighted-comment">$1</span>'
-    );
-
-    return highlightedCode;
-  }
-
-  function updateHighlighting() {
-    const code = textarea.value;
-    highlighted.innerHTML = highlightCode(code);
-    highlighted.scrollTop = textarea.scrollTop;
-    highlighted.scrollLeft = textarea.scrollLeft;
-  }
-
-  textarea.addEventListener("input", updateHighlighting);
-  textarea.addEventListener("scroll", updateHighlighting);
-  updateHighlighting();
-</script>
 
 
 
