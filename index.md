@@ -73,10 +73,18 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 ## Python
 <div class="code-editor-container">
   <div id="highlighted-code">
-    <span class="highlighted-keyword">def</span> greet():
-    &nbsp;&nbsp;<span class="highlighted-keyword">print</span>(<span class="highlighted-string">"Hello from a neon-themed Jekyll site!"</span>)
+    <span class="highlighted-comment"># Neon greeting generator</span><br>
+    <span class="highlighted-keyword">def</span> greet(<span class="highlighted-keyword">name</span>):<br>
+    &nbsp;&nbsp;<span class="highlighted-keyword">if</span> name:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlighted-keyword">print</span>(<span class="highlighted-string">f"Welcome, {name}!"</span>)<br>
+    &nbsp;&nbsp;<span class="highlighted-keyword">else</span>:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlighted-keyword">print</span>(<span class="highlighted-string">"Hello, stranger!"</span>)<br><br>
+
+    <span class="highlighted-keyword">for</span> user <span class="highlighted-keyword">in</span> [<span class="highlighted-string">"Neo"</span>, <span class="highlighted-string">""</span>, <span class="highlighted-string">"Trinity"</span>]:<br>
+    &nbsp;&nbsp;greet(user)
   </div>
 </div>
+
 
 
 
