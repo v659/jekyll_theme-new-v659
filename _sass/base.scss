@@ -183,3 +183,37 @@ p, li, label, input, button, span, div {
   min-height: 100px;
   caret-color: $secondary-color;
 }
+
+.editor-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+textarea#code-input {
+  background: transparent;
+  color: transparent;
+  caret-color: $secondary-color;
+  font-family: 'Source Code Pro', monospace;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+
+pre.language-python {
+  margin: 0;
+  padding: 1rem;
+  border: 2px solid $primary-color;
+  border-radius: 0.5rem;
+  background: #111;
+  font-family: 'Source Code Pro', monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  z-index: 1;
+  pointer-events: none;
+}

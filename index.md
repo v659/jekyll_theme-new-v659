@@ -50,7 +50,9 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 <h4>H4</h4>
 <h5>H5</h5>
 <h6>H6</h6>
+
 ---
+
 ##  Typing Input
 
 <div class="card">
@@ -68,12 +70,31 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 ---
 
-# Code box
+## Try Typing Python Below
 
-<div class="editable-code" contenteditable="true" spellcheck="false">
-def greet():
-    print("Hello from a neon-themed Jekyll site!")
+<div class="editor-container">
+  <textarea id="code-input" spellcheck="false">def greet():
+    print("Hello from a neon-themed Jekyll site!")</textarea>
+  <pre class="language-python"><code id="highlighted-code" class="language-python"></code></pre>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const input = document.getElementById("code-input");
+    const output = document.getElementById("highlighted-code");
+
+    input.addEventListener("input", () => {
+      const escaped = input.value.replace(/&/g, "&amp;")
+                                 .replace(/</g, "&lt;")
+                                 .replace(/>/g, "&gt;");
+      output.innerHTML = escaped;
+      Prism.highlightElement(output);
+    });
+
+    input.dispatchEvent(new Event("input"));
+  });
+</script>
+
 
 
 
