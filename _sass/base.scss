@@ -149,6 +149,10 @@ p, li, label, input, button, span, div {
   @extend .code-box;
 }
 
+.highlight .k { color: #ffb700; } // keywords
+.highlight .s { color: #00ffff; } // strings
+.highlight .c { color: #777; }    // comments
+
 .highlight code {
   font-family: 'Source Code Pro', monospace;
   color: $primary-color;
