@@ -1,13 +1,8 @@
-// assets/css/base.scss
-
-// Import Neon-like Font
-// assets/css/base.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); // For titles
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap'); // For body
 
 
-// Variables
 $primary-color: #00ffff; // Cyan neon
 $secondary-color: #ffb700; // Magenta neon
 $font-title: 'Orbitron', sans-serif;
@@ -15,12 +10,10 @@ $font-body: 'Source Code Pro', monospace;
 
 $padding: 1rem;
 
-// Neon Text Mixin
 @mixin neon-text($color) {
   color: $color;
 }
 
-// Base
 body {
   font-family: $font-body;
   background: #0a0a0a;
@@ -35,30 +28,28 @@ body {
   50% { text-shadow: -2px 2px #ffb700, 2px -2px #0ff; }
   100% { text-shadow: 2px 2px #0ff, -2px -2px #ffb700; }
 }
-// Headings
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
   @include neon-text($primary-color);
 }
-// Highlight
+
 mark{
   background-color: #ffb700;
   color:#000;
   font-weight: 5px;
 }
-// Paragraphs, Lists, etc.
+
 p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
 }
 
-// Layout
 .container {
   max-width: 960px;
   margin: auto;
   padding: $padding;
 }
 
-// Buttons
 @mixin button-style($bg) {
   background-color: $bg;
   color: rgb(0, 0, 0);
@@ -85,7 +76,6 @@ p, li, label, input, button, span, div {
   @include button-style($secondary-color);
 }
 
-// Cards
 .card {
   background: #1c1c1c;
   padding: $padding;
@@ -94,7 +84,6 @@ p, li, label, input, button, span, div {
   margin-bottom: 1.5rem;
 }
 
-// Highlights
 .highlight-box {
   background-color: #222;
   border-left: 5px solid $primary-color;
@@ -104,7 +93,6 @@ p, li, label, input, button, span, div {
   font-weight: 500;
 }
 
-// Underlined Text
 .underline {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -121,7 +109,6 @@ p, li, label, input, button, span, div {
   text-decoration-color: $secondary-color;
 }
 
-// Typing Box
 .typing-box {
   padding: $padding;
   font-family: $font-body;
