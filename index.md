@@ -71,13 +71,13 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 ---
 
 ## Python
-<div class="language-python highlighter-rouge">
-  <div class="highlight">
-    <pre class="highlight"><code><span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s">"Hello from a neon-themed Jekyll site!"</span><span class="p">)</span>
-</code></pre>
+<div class="code-editor-container">
+  <div id="highlighted-code">
+    <span class="highlighted-keyword">def</span> greet():<br>
+    &nbsp;&nbsp;<span class="highlighted-keyword">print</span>(<span class="highlighted-string">"Hello from a neon-themed Jekyll site!"</span>)
   </div>
 </div>
+
 
 
 
