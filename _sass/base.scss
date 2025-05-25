@@ -192,7 +192,7 @@ p, li, label, input, button, span, div {
   height: auto;
 }
 
-textarea#code-input {
+textarea#code-input, pre.language-python {
   font-family: 'Source Code Pro', monospace;
   font-size: 1rem;
   line-height: 1.5;
@@ -214,6 +214,7 @@ textarea#code-input {
   outline: none;
   white-space: pre-wrap;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 pre.language-python {
