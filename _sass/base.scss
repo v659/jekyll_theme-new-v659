@@ -155,12 +155,16 @@ p, li, label, input, button, span, div {
   color: transparent;
   caret-color: #00ffff;
   z-index: 2;
+  line-height: 1.5;
+  padding: 1rem;
 }
 
 #highlighted-code {
   position: relative;
   z-index: 1;
   pointer-events: none;
+  line-height: 1.5;
+  padding: 1rem;
 }
 
 /* Custom highlighting styles */

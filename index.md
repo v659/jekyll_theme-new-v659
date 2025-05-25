@@ -90,21 +90,27 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   }
 
   function highlightCode(code) {
-    code = escapeHtml(code);
+    let escaped = escapeHtml(code);
 
-    // Highlight keywords
-    code = code.replace(
+    // Highlight Python keywords
+    escaped = escaped.replace(
       /\b(def|print|return|if|else|elif|for|while|in|import|from|as|with|class|try|except|finally|raise|pass|continue|break|and|or|not|is|None|True|False)\b/g,
       '<span class="highlighted-keyword">$1</span>'
     );
 
     // Highlight strings
-    code = code.replace(/(["'])(?:(?=(\\?))\2.)*?\1/g, '<span class="highlighted-string">$&</span>');
+    escaped = escaped.replace(
+      /(".*?"|'.*?')/g,
+      '<span class="highlighted-string">$1</span>'
+    );
 
     // Highlight comments
-    code = code.replace(/(#.*?$)/gm, '<span class="highlighted-comment">$1</span>');
+    escaped = escaped.replace(
+      /(#.*?$)/gm,
+      '<span class="highlighted-comment">$1</span>'
+    );
 
-    return code;
+    return escaped;
   }
 
   function updateHighlighting() {
@@ -116,9 +122,9 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
   textarea.addEventListener("input", updateHighlighting);
   textarea.addEventListener("scroll", updateHighlighting);
-
   updateHighlighting();
 </script>
+
 
 
 
