@@ -74,26 +74,40 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 <div class="editor-container">
   <textarea id="code-input" spellcheck="false">def greet():
-    print("Hello from a neon-themed Jekyll site!")</textarea>
-  <pre class="language-python"><code id="highlighted-code" class="language-python"></code></pre>
+    print("Hello!")</textarea>
+  <pre class="language-python" id="highlighted-code"><code>def greet():
+    print("Hello!")</code></pre>
 </div>
 
+
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const input = document.getElementById("code-input");
-    const output = document.getElementById("highlighted-code");
+const textarea = document.getElementById("code-input");
+const highlighted = document.getElementById("highlighted-code");
 
-    input.addEventListener("input", () => {
-      const escaped = input.value.replace(/&/g, "&amp;")
-                                 .replace(/</g, "&lt;")
-                                 .replace(/>/g, "&gt;");
-      output.innerHTML = escaped;
-      Prism.highlightElement(output);
-    });
+function highlightCode(code) {
+  // Escape HTML
+  code = code
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-    input.dispatchEvent(new Event("input"));
-  });
+  // Simple custom rules
+  code = code
+    .replace(/\b(def|print|return|if|else|for|while|in|import)\b/g,
+             '<span class="highlighted-keyword">$1</span>')
+    .replace(/(".*?"|'.*?')/g,
+             '<span class="highlighted-string">$1</span>');
+
+  return code;
+}
+
+textarea.addEventListener("input", () => {
+  const code = textarea.value;
+  highlighted.innerHTML = `<code>${highlightCode(code)}</code>`;
+});
+
+// Initial render
+highlighted.innerHTML = `<code>${highlightCode(textarea.value)}</code>`;
 </script>
+
 
 
 
