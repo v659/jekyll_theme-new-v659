@@ -72,13 +72,11 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 ## Try Typing Python Below
 
-<div class="editor-container">
-  <textarea id="code-input" spellcheck="false">def greet():
-    print("Hello!")</textarea>
-  <pre class="language-python" id="highlighted-code"><code>def greet():
-    print("Hello!")</code></pre>
+<div class="code-editor-container">
+  <textarea id="code-input" spellcheck="false" placeholder="Type Python code here...">def greet():
+    print("Hello from a neon-themed Jekyll site!")</textarea>
+  <pre id="highlighted-code" aria-hidden="true"></pre>
 </div>
-
 
 <script>
   const textarea = document.getElementById("code-input");
@@ -94,41 +92,34 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   function highlightCode(code) {
     code = escapeHtml(code);
 
-    // Highlight Python keywords
+    // Highlight keywords
     code = code.replace(
       /\b(def|print|return|if|else|elif|for|while|in|import|from|as|with|class|try|except|finally|raise|pass|continue|break|and|or|not|is|None|True|False)\b/g,
       '<span class="highlighted-keyword">$1</span>'
     );
 
-    // Highlight strings (single and double quotes)
-    code = code.replace(
-      /(".*?"|'.*?')/g,
-      '<span class="highlighted-string">$1</span>'
-    );
+    // Highlight strings
+    code = code.replace(/(["'])(?:(?=(\\?))\2.)*?\1/g, '<span class="highlighted-string">$&</span>');
 
     // Highlight comments
-    code = code.replace(
-      /(#.*?$)/gm,
-      '<span class="highlighted-comment">$1</span>'
-    );
+    code = code.replace(/(#.*?$)/gm, '<span class="highlighted-comment">$1</span>');
 
     return code;
   }
 
   function updateHighlighting() {
     const code = textarea.value;
-    highlighted.innerHTML = `<code>${highlightCode(code)}</code>`;
+    highlighted.innerHTML = highlightCode(code);
+    highlighted.scrollTop = textarea.scrollTop;
+    highlighted.scrollLeft = textarea.scrollLeft;
   }
 
   textarea.addEventListener("input", updateHighlighting);
-  textarea.addEventListener("scroll", () => {
-    highlighted.scrollTop = textarea.scrollTop;
-    highlighted.scrollLeft = textarea.scrollLeft;
-  });
+  textarea.addEventListener("scroll", updateHighlighting);
 
-  // Initial highlight
   updateHighlighting();
 </script>
+
 
 
 

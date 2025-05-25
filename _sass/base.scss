@@ -124,101 +124,46 @@ p, li, label, input, button, span, div {
 }
 
 // Code Box Styling
-.code-box {
-  background: #0d0d0d;
-  border: 2px solid $primary-color;
-  padding: 1rem;
-  font-family: 'Source Code Pro', monospace;
-  color: $primary-color;
-  border-radius: 0.5rem;
-  overflow-x: auto;
-  margin: 1rem 0;
-  line-height: 1.6;
-
-  box-shadow:
-    0 0 6px $primary-color,
-    0 0 12px $primary-color,
-    inset 0 0 8px $primary-color;
-
-  code {
-    font-family: inherit;
-    background: transparent;
-    color: inherit;
-  }
-}
-
-// Apply the same styling to Rouge-highlighted code blocks
-.highlight {
-  @extend .code-box;
-}
-
-
-
-.highlight code {
-  font-family: 'Source Code Pro', monospace;
-  color: inherit;
-}
-
-.editable-code {
-  background: #111;
-  border: 2px solid $primary-color;
-  padding: 1rem;
-  font-family: 'Source Code Pro', monospace;
-  color: $primary-color;
-  border-radius: 0.5rem;
-  overflow-x: auto;
-  margin: 1rem 0;
-  white-space: pre;
-  box-shadow:
-    0 0 5px $primary-color,
-    0 0 10px $primary-color,
-    inset 0 0 10px $primary-color;
-  outline: none;
-  min-height: 100px;
-  caret-color: $secondary-color;
-}
-
-.editor-container {
+.code-editor-container {
   position: relative;
-  margin: 2rem 0;
+  max-width: 700px;
+  margin: 1rem 0;
 }
 
-textarea#code-input,
-pre.language-python {
+#code-input,
+#highlighted-code {
   font-family: 'Source Code Pro', monospace;
-  font-size: 16px;          // Use px for precision
-  line-height: 24px;        // 1.5 × font size
-  padding: 16px;
-  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00ffff;
+  background: #111;
+  color: #00ffff;
   width: 100%;
-  min-height: 200px;
-  border-radius: 8px;
+  white-space: pre;
   overflow: auto;
+  box-shadow: inset 0 0 10px #00ffff;
 }
 
-textarea#code-input {
+#code-input {
   position: absolute;
   top: 0;
   left: 0;
-  color: transparent;
-  background: transparent;
-  caret-color: #ffb700;     // Your neon cursor
-  z-index: 2;
-  border: none;
   resize: none;
-  outline: none;
-  white-space: pre-wrap;
+  background: transparent;
+  color: transparent;
+  caret-color: #00ffff;
+  z-index: 2;
 }
 
-pre.language-python {
-  background: #111;
-  border: 2px solid $primary-color;
-  color: $primary-color;
+#highlighted-code {
+  position: relative;
   z-index: 1;
   pointer-events: none;
-  white-space: pre-wrap;
 }
 
+/* Custom highlighting styles */
 .highlighted-keyword {
   color: #ffb700;
   font-weight: bold;
@@ -232,5 +177,6 @@ pre.language-python {
   color: #777;
   font-style: italic;
 }
+
 
 
