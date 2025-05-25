@@ -72,7 +72,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 <div class="code-box">
 <code>
-function greet() {
+function greet() <br> {
   console.log("Hello, neon world!");
 }
 </code>
