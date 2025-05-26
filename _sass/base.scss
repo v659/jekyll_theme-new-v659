@@ -65,10 +65,11 @@ th, td {
 }
 
 tr:nth-child(even){background-color: #ffb700}
+tr:nth-child(odd){background-color: #0ff}
 
 th {
   background-color:#0ff;
-  @include neon-text($primary-color)
+  color: #000
 }
 p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
