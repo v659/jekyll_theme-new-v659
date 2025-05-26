@@ -67,7 +67,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
 
 ## Table
 
-<table>
+<table border=1>
   <tr>
   <th>First Name</th>
   <th>Last Name</th>
