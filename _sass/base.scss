@@ -65,9 +65,6 @@ th, td {
   @include neon-text($primary-color)
 }
 
-tr:nth-child(even){background-color: #000; @include neon-text($secondary-color)}
-tr:nth-child(odd){background-color: #fff;  @include neon-text($primary-color)}
-
 th {
   background-color:#fff;
   @include neon-text($secondary-color)
