@@ -67,7 +67,7 @@ th, td {
 tr:nth-child(even){background-color: #ffb700}
 
 th {
-  background-color:#000000;
+  background-color:#0ff;
   @include neon-text($primary-color)
 }
 p, li, label, input, button, span, div {
