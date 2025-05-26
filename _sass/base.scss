@@ -64,11 +64,11 @@ th, td {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #ffffff}
 
 th {
-  background-color: #f2f2f2;
-  color: white;
+  background-color:#ffffff;
+  @include neon-text($primary-color)
 }
 p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
