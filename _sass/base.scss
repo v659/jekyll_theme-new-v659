@@ -62,15 +62,15 @@ table {
 th, td {
   text-align: left;
   padding: 8px;
-  color: #000
+  @include neon-text($primary-color)
 }
 
-tr:nth-child(even){background-color: #ffb700}
-tr:nth-child(odd){background-color: #0ff}
+tr:nth-child(even){background-color: #000}
+tr:nth-child(odd){background-color: #fff}
 
 th {
-  background-color:#0ff;
-  color: #000
+  background-color:#fff;
+  @include neon-text($secondary-color)
 }
 p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
