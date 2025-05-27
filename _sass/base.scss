@@ -75,6 +75,10 @@ p, li, label, input, button, span, div {
   @include neon-text($secondary-color);
 }
 
+hr {
+  border: 1px solid $primary-color;
+}
+
 // Glitch animation (optional)
 @keyframes glitch {
   0% { text-shadow: 2px 2px #0ff, -2px -2px #ffb700; }
