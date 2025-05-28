@@ -74,7 +74,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   <th>Points</th>
   </tr>
   <tr>
-  <td>Lois</td>
+  <td>Tim</td>
   <td>Griffin</td>
   <td>$150</td>
   </tr>
@@ -84,7 +84,7 @@ Neon-X is a custom orange-blue Jekyll theme with neon-ish colours
   <td>$300</td>
   </tr>
   <tr>
-  <td>Cleveland</td>
+  <td>Bob</td>
   <td>Brown</td>
   <td>$250</td>
   </tr>
